@@ -36,26 +36,6 @@ server.listen(process.env.PORT || 5000, () => {
 ```
 
 
-#### Step 4: Create db.json
-```js
-{
-    "users": [
-        { "id": 1, "name":"Naresh Kumar H", "email":"nareshkumarh@live.com", 
-        "password":"pass123", "role": "USER"
-        },
-        { "id": 2, "name":"Tushant", "email":"tushant@gmail.com", 
-            "password":"pass123", "role": "ADMIN"
-        }
-    ],
-    "accounts":[
-
-    ],
-    "transactions":[
-
-    ]
-}
-```
-
 #### Step 5: Run the Node JS Project
 ```
 node server.js
@@ -64,40 +44,4 @@ node server.js
 #### Step 6: Test - List Users API 
 ```
 http://localhost:5000/api/users
-```
-
-Output:
-```js
-[
- {
- id: 1,
- name: "Naresh Kumar H",
- email: "nareshkumarh@live.com",
- password: "pass123",
- role: "USER"
- },
-{
- id: 2,
- name: "Tushant",
- email: "tushant@gmail.com",
- password: "pass123",
- role: "ADMIN"
-}
-]
-```
-
-#### Step 7: Test - View User Details API 
-```
-http://localhost:5000/api/users/1
-```
-
-Output:
-```js
- {
- id: 1,
- name: "Naresh Kumar H",
- email: "nareshkumarh@live.com",
- password: "pass123",
- role: "USER"
- }
 ```
